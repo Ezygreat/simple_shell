@@ -56,13 +56,13 @@ char *error_127(char **args)
 	{
 		free(hist_str);
 		return (NULL);
-		_strcpy(error, name);
-		_strcat(error, ": ");
-		_strcat(error, hist_str);
-		_strcat(error, ": ");
-		_strcat(error, args[0]);
-		_strcat(error, ": not found\n");
-		free(hist_str);
-		return (error);
 	}
+	_strcpy(error, name);
+	_strcat(error, ": ");
+	_strcat(error, hist_str);
+	_strcat(error, ": ");
+	_strcat(error, args[0]);
+	_strcat(error, ": not found\n");
+	free(hist_str);
+	return (error);
 }
